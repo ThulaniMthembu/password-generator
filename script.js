@@ -112,9 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to copy text to clipboard
   const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Password copied to clipboard');
-    }, (err) => {
+    navigator.clipboard.writeText(text).then(() =>  
+    (err) => {
       console.error('Could not copy text: ', err);
     });
   };
