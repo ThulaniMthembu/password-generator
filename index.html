@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Password, Password Generator, Secure" />
+    <meta name="author" content="Thulani {Dev-Majxr} Mthembu" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- for icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="toggle-container">
+        <button class="theme" id="light-btn" aria-label="Light Mode">
+          <i class="bx bx-sun bx-sm"></i>
+        </button>
+        <button class="theme" id="dark-btn" aria-label="Dark Mode">
+          <i class="bx bxs-moon bx-sm"></i>
+        </button>
+      </div>
+
+      <div id="pwd-generator-container">
+        <div id="text">
+          <h1 id="header-el">
+            Generate a <br />
+            <span class="span">random password</span>
+          </h1>
+          <p id="paragraph-el">Never use an insecure password again.</p>
+        </div>
+
+        <div id="optional-container" style="display: none" aria-label="hidden">
+          <label>Password must (optional):</label>
+          <br />
+          <label for="symbols">Include symbols</label>
+          <input type="checkbox" id="symbols" name="symbols" class="checkbox" />
+          <br />
+
+          <label for="numbers">Include numbers</label>
+          <input type="checkbox" id="numbers" name="numbers" class="checkbox" />
+          <br />
+
+          <label for="length">Required length</label>
+          <select id="length" name="length">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+          </select>
+        </div>
+
+        <div id="btn-container">
+          <button id="generatePwd-btn" class="buttons">
+            Generate password
+          </button>
+          <button id="customPwd-btn" class="buttons">Custom password</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="pwd-container">
+        <div class="pwd-inputs" id="pwd1" aria-label="Password 1"></div>
+        <div class="pwd-inputs" id="pwd2" aria-label="Password 2"></div>
+      </div>
+
+      <footer>
+        <p>
+          By
+          <a href="https://github.com/ThulaniMthembu" target="_blank"
+            >Thulani Mthembu</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
